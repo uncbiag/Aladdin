@@ -16,3 +16,13 @@ If you use Aladdin or some part of the code. please cite:
   year={2022}
 }
 ```
+
+## Key Observations
+
+### Pairwise Alignment
+
+### Theoretical Justification
+
+### Evaluation Criteria
+
+### Implementation
