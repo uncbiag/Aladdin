@@ -42,12 +42,25 @@ If you use Aladdin or some part of the code. please cite:
 
 ### Pairwise Alignment
 Inspired by *backward* atlas building, we propose the first pairwise alignment loss in *atlas space* as:
+<p align="center">
+  <img src="./figs/pairwise_loss_in_atlas_space.png" width="50%">
+</p>
 
 Inspired by *forward* atlas building, we propose the second pairwise alignment loss in *image space* as:
-
 <p align="center">
-  <img src="./figs/architecture_comparison_3.png" width="80%">
+  <img src="./figs/pairwise_loss_in_image_space.png" width="50%">
 </p>
+
+Thus, a *forward* atlas building model with pairwise image alignment can be formulated as:
+<p align="center">
+  <img src="./figs/forward_atlas_building_with_pairwise_alignment.png" width="50%">
+</p>
+
+This is demonstrated in the following architecture of our proposed model
+<p align="center">
+  <img src="./figs/architecture_comparison_3.png" width="100%">
+</p>
+> In the above figure, (b) is a standard forward atlas building architecture; (c) is our proposed model with pairwise image alignment losses.  Our model extends the standard model by incorporating pairwise image losses and by computing their alignments in atlas space as well as in image space using the atlas as a bridge.
 
 ### Theoretical Justification
 
