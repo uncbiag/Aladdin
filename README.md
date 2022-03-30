@@ -41,6 +41,9 @@ If you use Aladdin or some part of the code. please cite:
 3. **(Pre-processing)** Most existing atlas building methods rely on affine pre-registrations to a chosen reference image. Instead of separately considering affine and nonparametric transformations, we propose to predict a transformation which includes affine and nonparametric deformations. To achieve this goal, we used bending energy as the regularization term. We hypothesize that our combined transformation prediction is as accurate as methods that treat affine and nonparametric transformations separately.
 
 ### Pairwise Alignment
+Inspired by *backward* atlas building, we propose the first pairwise alignment loss in *atlas space* as:
+
+Inspired by *forward* atlas building, we propose the second pairwise alignment loss in *image space* as:
 
 <p align="center">
   <img src="./figs/architecture_comparison_3.png" width="80%">
