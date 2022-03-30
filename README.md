@@ -40,7 +40,7 @@ If you use Aladdin or some part of the code. please cite:
 
 3. **(Pre-processing)** Most existing atlas building methods rely on affine pre-registrations to a chosen reference image. Instead of separately considering affine and nonparametric transformations, we propose to predict a transformation which includes affine and nonparametric deformations. To achieve this goal, we used bending energy as the regularization term. We hypothesize that our combined transformation prediction is as accurate as methods that treat affine and nonparametric transformations separately.
 
-### Pairwise Alignment
+## Pairwise Alignment
 Inspired by *backward* atlas building, we propose the first pairwise alignment loss in *atlas space* as:
 <p align="center">
   <img src="./figs/pairwise_loss_in_atlas_space.png" width="50%">
@@ -60,10 +60,13 @@ This is demonstrated in the following architecture of our proposed model
 <p align="center">
   <img src="./figs/architecture_comparison_3.png" width="100%">
 </p>
-> In the above figure, (b) is a standard forward atlas building architecture; (c) is our proposed model with pairwise image alignment losses.  Our model extends the standard model by incorporating pairwise image losses and by computing their alignments in atlas space as well as in image space using the atlas as a bridge.
 
-### Theoretical Justification
+> In the above figure, (b) is a standard forward atlas building architecture; (c) is our proposed model with pairwise image alignment losses.  Our model extends the standard model by incorporating pairwise image losses and by computing their alignments in atlas space as well as in image space using the atlas as a bridge. See details in the paper.
 
-### Evaluation Criteria
+## Theoretical and Emprical Justification
+The benefit of using pairwise image alignment losses are illustrated by using Euler-Lagrange equation. Specifically, we can prove that
 
-### Implementation
+
+## Evaluation Criteria
+
+## Implementation
