@@ -28,7 +28,7 @@ If you use Aladdin or some part of the code. please cite:
 > In the above figure, we can clearly see that image-to-image differences are greater than atlas-to-image differences. Hence, an image-to-image similarity measure is expected to provide more alignment information than an atlas-to-image similarity measure because a fuzzy atlas does not exhibit the clear anatomic structures present in individual images. Detailed explanations can be found in the paper. 
 
 
-2. **(Evaluation)** The quality of an atlas is usually evaluated in combination with the quality of the image registration algorithm. For example, an atlas framework is often evaluated based on the sharpness or entropy of the atlas, the alignment of test images in the atlas space, or the alignment of the warped atlas in test image space. These evaluation measures all have shortcomings (refer the paper for details). Therefore, we propose *atlas-as-a-bridge* measure which is conceptually preferable to existing evaluation measures.
+2. **(Evaluation)** The quality of an atlas is usually evaluated in combination with the quality of the image registration algorithm. For example, an atlas framework is often evaluated based on the sharpness or entropy of the atlas, the alignment of test images in the atlas space, or the alignment of the warped atlas in test image space. These evaluation measures all have shortcomings (see the paper for details). Therefore, we propose *atlas-as-a-bridge* measure which is conceptually preferable to existing evaluation measures.
 
 <p align="center">
   <img src="./figs/atlas_evaluation.png" width="80%">
