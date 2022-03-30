@@ -65,8 +65,40 @@ This is demonstrated in the following architecture of our proposed model
 
 ## Theoretical and Emprical Justification
 The benefit of using pairwise image alignment losses are illustrated by using Euler-Lagrange equation. Specifically, we can prove that
+<p align="center">
+  <img src="./figs/ele_theorem_2.png" width="90%">
+</p>
+At optimality the Euler-Lagrange equations need to be hold. Therefore, within the iterative updating schema, adding pairwise terms will speed-up the convergence of the stationary velocity field. See details in the paper. we design a simple experiment to compare a vanilla atlas-to-image registration model to show improvements obtained by the pairwise loss terms. The results are highlighted in below
+<p align="center">
+  <img src="./figs/pairwise_loss_demo_3.png" width="100%">
+</p>
 
+> In the above figure, We notice that both pairwise alignment terms speed-up the convergence and increase the overall performance. The pairwise alignment term in image space performs better than the pairwise alignment term in atlas space. See details in the paper.
+
+## Example Atlas Building Results
+The following figure shows the atlas building results with and without pairwise alignment terms. Deatiled quantitative results can be found in the paper.
+<p align="center">
+  <img src="./figs/example_atlas_result.png" width="60%">
+</p>
 
 ## Evaluation Criteria
+As discussed in the above, we propose atlas-as-a-bridge measure to evaluate the performance of atlas building framework. Specifically, the following figure is the mathematical expression of evaluations in different ways and our proposed measure is preferable than traditional evalution measures. See details in the paper.
+<p align="center">
+  <img src="./figs/atlas_evaluation_methods.png" width="50%">
+</p>
 
 ## Implementation
+Source coude is provided at the [code](https://github.com/uncbiag/Aladdin/tree/main/code) folder.
+For training,
+```
+python 
+```
+
+For evaluation,
+```
+python 
+```
+
+
+
+
