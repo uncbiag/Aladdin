@@ -9,10 +9,11 @@ This is the official repository for
 
 If you use Aladdin or some part of the code. please cite:
 ```
-@article{ding2022aladdin,
+@inproceedings{ding2022aladdin,
   title={Aladdin: Joint Atlas Building and Diffeomorphic Registration Learning with Pairwise Alignment},
   author={Ding, Zhipeng and Niethammer, Marc},
-  journal={arXiv preprint arXiv:2202.03563},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={20784--20793},
   year={2022}
 }
 ```
