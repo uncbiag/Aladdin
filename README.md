@@ -91,12 +91,13 @@ As discussed in the above, we propose atlas-as-a-bridge measure to evaluate the 
 Source coude is provided at the [code](https://github.com/uncbiag/Aladdin/tree/main/code) folder.
 For training,
 ```
-python 
+python SVF_train_forward_atlas.py --epochs 500 --batch-size 2 --lr 1e-4 --sim-factor 10.0 --reg-factor 20000.0 --atlas-pair-sim-factor 0.0 --image-pair-sim-factor 0.0 --seed 2021 --gpu 0 --sim-loss SSD --save-per-epoch 10
 ```
 
 For evaluation,
 ```
-python 
+python SVF_test_forward_atlas_example.py
+python Analyze_atlas_as_bridge_forward_network.py
 ```
 
 
